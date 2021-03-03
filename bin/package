@@ -20,7 +20,7 @@ rustup toolchain install stable-$target
 
 case $os in
   ubuntu-latest | macos-latest)
-    cargo build --bin $bin --target x86_64-pc-windows-gnu --release
+    cargo build --bin $bin --target $target --release
     #cargo rustc --bin $bin --target $target --release
     executable=target/$target/release/$bin
     ;;
