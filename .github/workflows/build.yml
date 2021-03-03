@@ -62,7 +62,7 @@ jobs:
         override: true
 
     - name: Install dependancies
-      run: sudo apt-get install libpango1.0-dev libatk1.0-dev
+      run: sudo apt-get install libpango1.0-dev libatk1.0-dev libgtk-3-dev
 
     - name: Version
       run: |
